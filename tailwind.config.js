@@ -55,11 +55,11 @@ const config = {
       'body': ['"Open Sans"',],
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
+  // plugins: [
+  //   require('tailwind-scrollbar'),
+  //   require('tailwindcss'),
+  //   require('autoprefixer'),
+  // ],
 }
 
 export default config;
