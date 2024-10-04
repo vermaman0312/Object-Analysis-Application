@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "../../ui/sidebar/ui";
-import {
-  IconBrandApplePodcast,
-  IconBrandTabler,
-  IconObjectScan,
-} from "@tabler/icons-react";
+import { IconBrandApplePodcast, IconBrandTabler } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { cn } from "../../../utils/cn";
 import { Link } from "react-router-dom";
@@ -31,7 +27,7 @@ export function CustomSidebar({ children }: { children: React.ReactNode }) {
     <div
       className={cn(
         "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 overflow-hidden",
-        "h-full" // for your use case, use `h-screen` instead of `h-[60vh]`
+        "h-full" // for your use case, use `h-screen` instead of `h-full`
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
@@ -79,7 +75,7 @@ export const Logo = () => {
         animate={{ opacity: 1 }}
         className="font-medium text-black dark:text-white whitespace-pre font-display"
       >
-        VERMAVISION AI
+        Vermavision-AI
       </motion.span>
     </Link>
   );
